@@ -37,7 +37,6 @@ class CityAdapter(
 
 
         holder.itemView.setOnClickListener {
-
             drawerLayout.closeDrawer(GravityCompat.START)
             Log.d("CityAdapter", "Item clicked: ${cities[position]}")
             val fragment = CityFragment.newInstance(cities[position], weatherApiService)

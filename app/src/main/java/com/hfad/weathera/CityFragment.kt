@@ -2,18 +2,18 @@ package com.hfad.weathera
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import java.util.TimeZone
+import androidx.fragment.app.Fragment
 import com.hfad.weathera.databinding.FragmentCityBinding
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.Date
+import java.util.TimeZone
 
 
 class CityFragment : Fragment() {
@@ -58,6 +58,7 @@ class CityFragment : Fragment() {
         } else {
             renderUIWithCoroutine(weatherApiService, "odesa")
         }
+
         return binding.root
     }
 

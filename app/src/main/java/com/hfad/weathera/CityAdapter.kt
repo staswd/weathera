@@ -48,9 +48,7 @@ class CityAdapter(
         }
 
 
-        Log.d("CityAdapter", "Item clicked:       ${holder.itemView.hasOnClickListeners()} ")
-        Log.d("CityAdapter", "Item clicked:       ${holder.cityNameTextView.hasOnClickListeners()} ")
-    }
+          }
 
     override fun getItemCount(): Int {
         return cities.size
